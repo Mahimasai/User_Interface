@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto+Slab&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: #161813;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: white;
+    }
+    .form-container {
+      background: #1f1f1f;
+      padding: 40px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.05);
+      width: 100%;
+      max-width: 400px;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-family: 'Roboto Slab', serif;
+    }
+    input, select {
+      width: 100%;
+      padding: 12px 15px;
+      margin: 10px 0 20px;
+      border: none;
+      border-radius: 8px;
+      background: #2d2d2d;
+      color: white;
+    }
+    input:focus, select:focus {
+      outline: none;
+      background: #3a3a3a;
+    }
+    button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      background: #4CAF50;
+      color: white;
+      font-size: 16px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    button:hover {
+      background: #45a049;
+    }
+    .back-link {
+      display: block;
+      text-align: center;
+      margin-top: 20px;
+      color: #ccc;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Register</h2>
+    <form>
+      <input type="text" placeholder="Full Name" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <select required>
+        <option value="">Select Role</option>
+        <option value="traveler">Traveler</option>
+        <option value="agent">Agent</option>
+      </select>
+      <button type="submit">Sign Up</button>
+    </form>
+    <a href="index.html" class="back-link">← Back to Home</a>
+  </div>
+</body>
+</html>
